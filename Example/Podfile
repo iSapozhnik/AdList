@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AdList_Example' do
+  pod 'AdList', :path => '../'
+
+  target 'AdList_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
