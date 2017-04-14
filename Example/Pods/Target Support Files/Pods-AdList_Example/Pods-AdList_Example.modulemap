@@ -1,0 +1,6 @@
+framework module Pods_AdList_Example {
+  umbrella header "Pods-AdList_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

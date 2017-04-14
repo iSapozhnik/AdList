@@ -1,0 +1,16 @@
+PODS:
+  - AdList (0.1.0)
+
+DEPENDENCIES:
+  - AdList (from `../`)
+
+EXTERNAL SOURCES:
+  AdList:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AdList: 2e8ddd77195f87512a14e6629b0a14404d0d8078
+
+PODFILE CHECKSUM: 7bfe89e16687b419b603f5761183a3d8e25dbe4f
+
+COCOAPODS: 1.2.0

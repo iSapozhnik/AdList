@@ -1,0 +1,6 @@
+framework module AdList {
+  umbrella header "AdList-umbrella.h"
+
+  export *
+  module * { export * }
+}
