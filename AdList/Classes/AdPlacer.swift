@@ -9,13 +9,14 @@
 import Foundation
 
 struct AdPlacer {
-    var ads: Set<Int>
     
-    func isAd(position: Int) -> Bool {
-        return ads.contains(position)
+    var adsIndexes: Set<Int>
+
+    func isAd(index: Int) -> Bool {
+        return adsIndexes.contains(index)
     }
     
-    mutating func append(position: Int) {
-        ads.insert(position)
+    mutating func append(index: Int) {
+        adsIndexes.insert(index)
     }
 }

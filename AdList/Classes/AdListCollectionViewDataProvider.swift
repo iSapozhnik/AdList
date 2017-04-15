@@ -10,12 +10,12 @@ import Foundation
 
 public class AdListCollectionViewDataProvider: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    var adPlacer = AdPlacer(ads: Set())
-    public var data: [String]!
+    var adPlacer = AdPlacer(adsIndexes: Set())
+    public var data: [AdListItem]!
 
     public var delegate: AdListCollectionViewDataSource?
-    public var adPosition: AdPositioning!
-    public var originalData: [String]! {
+    public var adItems: [AdListAdItem]!
+    public var originalData: [AdListItem]! {
         
         didSet {
             data = originalData
@@ -23,20 +23,31 @@ public class AdListCollectionViewDataProvider: NSObject, UICollectionViewDataSou
             // Display ad only if we have results to display
             if originalData.count > 0 {
                 
-                if adPosition.isStatic {
-                    let insertionPosition = adPosition.position < data.count ? adPosition.position : originalData.count
-                    data.insert("Advertisement", at: insertionPosition!)
-                    adPlacer.append(position: insertionPosition!)
-                } else {
-                    if adPosition.position > data.count {
-                        data.insert("Advertisement", at: data.count)
-                        adPlacer.append(position: data.count)
+                for adItem in adItems {
+                    
+                    if adItem.positioning.isStatic {
+                        
+                        let insertionPosition = adItem.positioning.position < data.count ? adItem.positioning.position : originalData.count
+                        data.insert(adItem, at: insertionPosition!)
                     } else {
-                        for index in (0..<data.count/adPosition.position) {
-                            let insertionPosition = (index + 1) * adPosition.position
-                            data.insert("Advertisement", at: insertionPosition)
-                            adPlacer.append(position: insertionPosition)
+                        
+                        if adItem.positioning.position > originalData.count {
+                            data.insert(adItem, at: originalData.count)
+
+                        } else {
+                            
+                            for index in (0..<(data.count)/adItem.positioning.position) {
+                                let insertionPosition = (index + 1) * adItem.positioning.position
+                                data.insert(adItem, at: insertionPosition)
+
+                            }
                         }
+                    }
+                }
+                
+                for (index, item) in data.enumerated() {
+                    if item.isAdvertisement() {
+                        adPlacer.append(index: index)
                     }
                 }
             }
@@ -52,8 +63,9 @@ public class AdListCollectionViewDataProvider: NSObject, UICollectionViewDataSou
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if adPlacer.isAd(position: indexPath.row) {
-            return (delegate?.ad_collectionView(collectionView, adCellForItemAt:indexPath))!
+        if adPlacer.isAd(index: indexPath.row) {
+            let adItem = data[indexPath.row]
+            return (delegate?.ad_collectionView(collectionView, adCellForAdItem:adItem, indexPath: indexPath))!
         } else {
             return (delegate?.ad_collectionView(collectionView, itemCellForItemAt:indexPath))!
         }
@@ -61,8 +73,9 @@ public class AdListCollectionViewDataProvider: NSObject, UICollectionViewDataSou
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        if adPlacer.isAd(position: indexPath.row) {
-            return CGSize(width: collectionView.bounds.width, height: CGFloat(adPosition.height))
+        if adPlacer.isAd(index: indexPath.row) {
+            let adItem = data[indexPath.row] as! AdListAdItem
+            return CGSize(width: collectionView.bounds.width, height: CGFloat(adItem.positioning.height))
         } else {
             return (delegate?.ad_collectionView(collectionView, layout:collectionViewLayout, sizeForItemAt:indexPath))!
         }

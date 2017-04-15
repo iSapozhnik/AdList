@@ -9,6 +9,7 @@
 import Foundation
 
 public struct AdPositioning {
+    
     public var position: Int!
     public var height: Double!
     public var isStatic: Bool!
@@ -18,22 +19,4 @@ public struct AdPositioning {
         self.height = height
         self.isStatic = isStatic
     }
-    
-    //    func isAd(indexPath: IndexPath, total: Int) -> Bool {
-    //        if `static` {
-    //
-    //            if indexPath.row < position {
-    //                if indexPath.row == total - 1 {
-    //                    return true
-    //                } else {
-    //                    return position == indexPath.row
-    //                }
-    //            } else {
-    //                 return indexPath.row == position
-    //            }
-    //
-    //        } else {
-    //            return indexPath.row != 0 && (indexPath.row % position == 0 || indexPath.row == total - 1)
-    //        }
-    //    }
 }

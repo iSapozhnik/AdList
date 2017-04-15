@@ -20,6 +20,10 @@
 		FF39277C1EA265A5000B3B69 /* AdPositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39277B1EA265A5000B3B69 /* AdPositioning.swift */; };
 		FF39277E1EA269BF000B3B69 /* AdPlacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39277D1EA269BF000B3B69 /* AdPlacer.swift */; };
 		FF3927801EA26C20000B3B69 /* AdListCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39277F1EA26C20000B3B69 /* AdListCollectionViewDataSource.swift */; };
+		FF3927861EA28C0E000B3B69 /* AdListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3927851EA28C0E000B3B69 /* AdListItem.swift */; };
+		FF3927891EA28CB7000B3B69 /* AdListFacebookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3927881EA28CB7000B3B69 /* AdListFacebookItem.swift */; };
+		FF39278B1EA296CF000B3B69 /* AdBaseListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39278A1EA296CF000B3B69 /* AdBaseListItem.swift */; };
+		FF39278F1EA2AFA6000B3B69 /* AdListGoogleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39278E1EA2AFA6000B3B69 /* AdListGoogleItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		FF39277B1EA265A5000B3B69 /* AdPositioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPositioning.swift; sourceTree = "<group>"; };
 		FF39277D1EA269BF000B3B69 /* AdPlacer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPlacer.swift; sourceTree = "<group>"; };
 		FF39277F1EA26C20000B3B69 /* AdListCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		FF3927851EA28C0E000B3B69 /* AdListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListItem.swift; sourceTree = "<group>"; };
+		FF3927881EA28CB7000B3B69 /* AdListFacebookItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListFacebookItem.swift; sourceTree = "<group>"; };
+		FF39278A1EA296CF000B3B69 /* AdBaseListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdBaseListItem.swift; sourceTree = "<group>"; };
+		FF39278E1EA2AFA6000B3B69 /* AdListGoogleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListGoogleItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +199,9 @@
 				FF39277F1EA26C20000B3B69 /* AdListCollectionViewDataSource.swift */,
 				FF39277B1EA265A5000B3B69 /* AdPositioning.swift */,
 				FF39277D1EA269BF000B3B69 /* AdPlacer.swift */,
+				FF3927871EA28C83000B3B69 /* AdTypes */,
+				FF3927851EA28C0E000B3B69 /* AdListItem.swift */,
+				FF39278A1EA296CF000B3B69 /* AdBaseListItem.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -229,6 +240,15 @@
 			);
 			name = "Pods-AdList_Tests";
 			path = "Target Support Files/Pods-AdList_Tests";
+			sourceTree = "<group>";
+		};
+		FF3927871EA28C83000B3B69 /* AdTypes */ = {
+			isa = PBXGroup;
+			children = (
+				FF3927881EA28CB7000B3B69 /* AdListFacebookItem.swift */,
+				FF39278E1EA2AFA6000B3B69 /* AdListGoogleItem.swift */,
+			);
+			path = AdTypes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3927891EA28CB7000B3B69 /* AdListFacebookItem.swift in Sources */,
+				FF39278F1EA2AFA6000B3B69 /* AdListGoogleItem.swift in Sources */,
 				714ADB28A9F4D7A6376820FE77051355 /* AdList-dummy.m in Sources */,
+				FF39278B1EA296CF000B3B69 /* AdBaseListItem.swift in Sources */,
+				FF3927861EA28C0E000B3B69 /* AdListItem.swift in Sources */,
 				FF39277E1EA269BF000B3B69 /* AdPlacer.swift in Sources */,
 				FF39277A1EA243AA000B3B69 /* AdListCollectionViewDataProvider.swift in Sources */,
 				FF39277C1EA265A5000B3B69 /* AdPositioning.swift in Sources */,

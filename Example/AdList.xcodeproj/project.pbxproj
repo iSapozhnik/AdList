@@ -16,6 +16,7 @@
 		713E3669D9E2F66ECF919B0E /* Pods_AdList_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75768274C3128891CF7B6A34 /* Pods_AdList_Example.framework */; };
 		FF3927831EA276FB000B3B69 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3927811EA276FB000B3B69 /* ItemCollectionViewCell.swift */; };
 		FF3927841EA276FB000B3B69 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF3927821EA276FB000B3B69 /* ItemCollectionViewCell.xib */; };
+		FF39278D1EA29DBA000B3B69 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39278C1EA29DBA000B3B69 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E5FFDE25EBD01CD538123C39 /* Pods-AdList_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdList_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AdList_Tests/Pods-AdList_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FF3927811EA276FB000B3B69 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		FF3927821EA276FB000B3B69 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		FF39278C1EA29DBA000B3B69 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				FF39278C1EA29DBA000B3B69 /* DataModel.swift */,
 				FF3927811EA276FB000B3B69 /* ItemCollectionViewCell.swift */,
 				FF3927821EA276FB000B3B69 /* ItemCollectionViewCell.xib */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF3927831EA276FB000B3B69 /* ItemCollectionViewCell.swift in Sources */,
+				FF39278D1EA29DBA000B3B69 /* DataModel.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

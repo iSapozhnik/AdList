@@ -12,7 +12,7 @@ public protocol AdListCollectionViewDataSource {
     
     func ad_collectionView(_ collectionView: UICollectionView, itemCellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     
-    func ad_collectionView(_ collectionView: UICollectionView, adCellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    func ad_collectionView(_ collectionView: UICollectionView, adCellForAdItem adItem: AdListItem, indexPath: IndexPath) -> UICollectionViewCell
     
     func ad_collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
 }

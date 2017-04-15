@@ -13,18 +13,25 @@ class ViewController: UIViewController, AdListCollectionViewDataSource {
     
     let dataProvider: AdListCollectionViewDataProvider = {
         let source = AdListCollectionViewDataProvider()
-        source.adPosition = AdPositioning(position: 7, height: 40, isStatic: false)
+        
+        let facebookType0 = AdListFacebookItem(positioning: AdPositioning(position: 7, height: 90, isStatic: false))
+//        let facebookType1 = AdListFacebookItem(positioning: AdPositioning(position: 20, height: 120, isStatic: true))
+        let googleType1 = AdListGoogleItem(positioning: AdPositioning(position: 1, height: 280, isStatic: true))
+        
+        source.adItems = [facebookType0, googleType1]
+        
         return source
     }()
     
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
     
-    let data: [String] = {
+    let data: [DataModel] = {
         
-        var tempData: [String] = []
+        var tempData: [DataModel] = []
         
-        for index in 0...29 {
-            tempData.insert("cell \(index)", at: index)
+        for index in 0...55 {
+            let model = DataModel(title: "cell \(index)")
+            tempData.insert(model, at: index)
         }
         
         return tempData
@@ -61,12 +68,13 @@ class ViewController: UIViewController, AdListCollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ItemCollectionViewCell
         
         cell.contentView.backgroundColor = .white
-        cell.label.text = dataProvider.data[indexPath.row]
-
+        let model = dataProvider.data[indexPath.row]
+        cell.label.text = model.placeholderTitle() ?? "No title provided"
+        
         return cell
     }
     
-    func ad_collectionView(_ collectionView: UICollectionView, adCellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func ad_collectionView(_ collectionView: UICollectionView, adCellForAdItem adItem: AdListItem, indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "adCell", for: indexPath)
         
@@ -78,16 +86,16 @@ class ViewController: UIViewController, AdListCollectionViewDataSource {
         
         let label = UILabel(frame: cell.contentView.bounds)
         label.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        cell.contentView.backgroundColor = .lightGray
+        cell.contentView.backgroundColor = adItem.adBackgroundColor?() ?? UIColor.lightGray
         label.textAlignment = .center
-        label.text = "Ad Cell"
+        label.text = adItem.placeholderTitle() ?? "Title for Ad not provided"
         cell.contentView.addSubview(label)
 
         return cell
     }
     
     func ad_collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: 200)
+        return CGSize(width: collectionView.bounds.width, height: 90)
     }
 
 }
