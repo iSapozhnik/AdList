@@ -17,6 +17,7 @@
 		E1ABB937DD3264AB42C80E5AD5516653 /* Pods-AdList_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E1A68FC6D004A0EF2396CA66455C6 /* Pods-AdList_Example-dummy.m */; };
 		F41E70A2531BB777904DEE356F813107 /* Pods-AdList_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B3C25CDF461A5C18E24FD7E66C3AF08 /* Pods-AdList_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFD3ADAA1EA194FF00A3AE5A /* AdListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD3ADA91EA194FF00A3AE5A /* AdListAdapter.swift */; };
+		FFD3ADAC1EA1999200A3AE5A /* AdListAdapterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD3ADAB1EA1999200A3AE5A /* AdListAdapterDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		F66EAF0FB32B120544192A3AB223847D /* Pods-AdList_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdList_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FCDDB43F36ED9E9FE71C4051AB8D9F2E /* AdList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFD3ADA91EA194FF00A3AE5A /* AdListAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListAdapter.swift; sourceTree = "<group>"; };
+		FFD3ADAB1EA1999200A3AE5A /* AdListAdapterDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListAdapterDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				FFD3ADA91EA194FF00A3AE5A /* AdListAdapter.swift */,
+				FFD3ADAB1EA1999200A3AE5A /* AdListAdapterDataSource.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD3ADAC1EA1999200A3AE5A /* AdListAdapterDataSource.swift in Sources */,
 				8670D9C1FECD28905D0CC15BEA2E1E81 /* AdList-dummy.m in Sources */,
 				FFD3ADAA1EA194FF00A3AE5A /* AdListAdapter.swift in Sources */,
 			);
