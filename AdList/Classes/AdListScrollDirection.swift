@@ -20,7 +20,7 @@ public class AdListScrollDirection: NSObject {
 
     public var direction: AdListScrollDirectionType = .undefined
     
-    func calculateDirection(_ offset: CGPoint) {
+    public func calculateDirection(_ offset: CGPoint) {
         
         let currentOffset = offset
 

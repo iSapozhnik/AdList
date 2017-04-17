@@ -10,7 +10,7 @@ import Foundation
 
 class AdPlacer {
     
-    var adsIndexes: Set<Int>!
+    var adsIndexes: Set<Int>! = []
     
     private var sortedIndexes: Array<Int>!
     
@@ -25,7 +25,7 @@ class AdPlacer {
     
     func adIndex(forCurrentIndex index: Int, scrollDirection direction: AdListScrollDirectionType) -> Int? {
 
-        guard sortedIndexes == nil else { return nil }
+        guard sortedIndexes != nil else { return nil }
         
         let currentIndexOfAd = sortedIndexes.index(of: index)
         

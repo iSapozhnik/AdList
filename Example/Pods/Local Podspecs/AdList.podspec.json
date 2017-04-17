@@ -1,8 +1,8 @@
 {
   "name": "AdList",
   "version": "0.1.0",
-  "summary": "A short description of AdList.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Simple class which populates your tableView or collectionView with an Ad placeholders",
+  "description": "Simple class which populates your tableView or collectionView with an Ad placeholders",
   "homepage": "https://github.com/isapozhnik/AdList",
   "license": {
     "type": "MIT",

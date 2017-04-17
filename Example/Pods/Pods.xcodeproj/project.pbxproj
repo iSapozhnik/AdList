@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A69E8BF489892DFEF934BB423098E3B /* AdPositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080848D3321DBFCE5B6AEF42A9B492A3 /* AdPositioning.swift */; };
+		23D854268DB660DA568E3066FB0ED9D2 /* AdList-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A6516C7BBE27DC65DA64ED7FB4F6A5 /* AdList-dummy.m */; };
 		2B53260A40FA3E958BDC200D4358ABA4 /* Pods-AdList_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2E9BDDE3C3C3948FBD0475717B78F6 /* Pods-AdList_Tests-dummy.m */; };
+		2F1D57FD33C07D6509D6C1096D72F61D /* AdListCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A850BB29908086D0513979B4C4F0681 /* AdListCollectionViewDataSource.swift */; };
+		31EFDEE2757246CFD211FCF1D07E730B /* AdList-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E22FD3E931D5553DF44492B354E05C75 /* AdList-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3264D6DA2AA44208DC2197BE1FEC5308 /* AdListCollectionViewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58092CB839DD6839292AD3F51816FB3D /* AdListCollectionViewDataProvider.swift */; };
 		38F384D14D2BC6174F26CED033D4D1F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		3AD184534910CD359DA8BC15BAEBD567 /* AdListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9BF00B1176F35FA764A60EC278D8DD /* AdListItem.swift */; };
+		40C1C4E6DBDC7B77760C6206A5592B3F /* AdPlacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81520312E4FB01F0FD12718DC3549B39 /* AdPlacer.swift */; };
 		5ABA523C4C6E5D03844D6538E4CFDCD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		714ADB28A9F4D7A6376820FE77051355 /* AdList-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A6516C7BBE27DC65DA64ED7FB4F6A5 /* AdList-dummy.m */; };
-		8735855CB75F363584D58036D51590FE /* AdList-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E22FD3E931D5553DF44492B354E05C75 /* AdList-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADFE6C9855A0E7692DC97D5A5E0AFF66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		76E6B1CEAA983186F74D511339A97699 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9EBD941601DE0169ADD5379907561A37 /* AdListScrollDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D6898533B17F83D387297A04367E18 /* AdListScrollDirection.swift */; };
+		CACA4675D2BF9E021C22B1BFD7AA3074 /* AdListFacebookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94817E5FC84A4C17632AC69282C40006 /* AdListFacebookItem.swift */; };
+		CFE02C60CE9DC28FAC8A2475B19A839B /* AdListGoogleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBDBBDD2E8EAB60DCF48589D701FC49 /* AdListGoogleItem.swift */; };
 		D4DBD0373E85415887C35358BB687479 /* Pods-AdList_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9804C852CD1A6854389FD1A0EB1FCA6 /* Pods-AdList_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1ABB937DD3264AB42C80E5AD5516653 /* Pods-AdList_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E1A68FC6D004A0EF2396CA66455C6 /* Pods-AdList_Example-dummy.m */; };
 		F41E70A2531BB777904DEE356F813107 /* Pods-AdList_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B3C25CDF461A5C18E24FD7E66C3AF08 /* Pods-AdList_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF39277A1EA243AA000B3B69 /* AdListCollectionViewDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3927791EA243AA000B3B69 /* AdListCollectionViewDataProvider.swift */; };
-		FF39277C1EA265A5000B3B69 /* AdPositioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39277B1EA265A5000B3B69 /* AdPositioning.swift */; };
-		FF39277E1EA269BF000B3B69 /* AdPlacer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39277D1EA269BF000B3B69 /* AdPlacer.swift */; };
-		FF3927801EA26C20000B3B69 /* AdListCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39277F1EA26C20000B3B69 /* AdListCollectionViewDataSource.swift */; };
-		FF3927861EA28C0E000B3B69 /* AdListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3927851EA28C0E000B3B69 /* AdListItem.swift */; };
-		FF3927891EA28CB7000B3B69 /* AdListFacebookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3927881EA28CB7000B3B69 /* AdListFacebookItem.swift */; };
-		FF39278F1EA2AFA6000B3B69 /* AdListGoogleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF39278E1EA2AFA6000B3B69 /* AdListGoogleItem.swift */; };
-		FF3927911EA5176B000B3B69 /* AdListScrollDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3927901EA5176B000B3B69 /* AdListScrollDirection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,28 +31,36 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8456940FF782574C76881E0C23A72C6D;
+			remoteGlobalIDString = DE58B4C6F63D634357EFFECEAA350763;
 			remoteInfo = AdList;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02BB61AB3AEB612755E015E159F82C25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03988E94C0D6A865F91297908EFA3284 /* Pods-AdList_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AdList_Example.modulemap"; sourceTree = "<group>"; };
+		03988E94C0D6A865F91297908EFA3284 /* Pods-AdList_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AdList_Example.modulemap"; sourceTree = "<group>"; };
+		080848D3321DBFCE5B6AEF42A9B492A3 /* AdPositioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdPositioning.swift; sourceTree = "<group>"; };
 		1181699B5B830BCC65DD617D12A06F73 /* Pods-AdList_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdList_Example-frameworks.sh"; sourceTree = "<group>"; };
 		2563EF908E68DEBB22DAE0AE12F4F1FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		285E1A68FC6D004A0EF2396CA66455C6 /* Pods-AdList_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdList_Example-dummy.m"; sourceTree = "<group>"; };
+		2DBDBBDD2E8EAB60DCF48589D701FC49 /* AdListGoogleItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdListGoogleItem.swift; sourceTree = "<group>"; };
 		3B74439CF3C744EBC22F9DB5919C708B /* AdList-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdList-prefix.pch"; sourceTree = "<group>"; };
 		3E1F27EAB73E5AB188E95B163B17AF09 /* Pods-AdList_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdList_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		46022BB9357049F8C5714A4DAF1A46F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D9BF00B1176F35FA764A60EC278D8DD /* AdListItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdListItem.swift; sourceTree = "<group>"; };
 		504AE13A0073359A1284F313062F572B /* Pods-AdList_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdList_Example-resources.sh"; sourceTree = "<group>"; };
+		54D6898533B17F83D387297A04367E18 /* AdListScrollDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdListScrollDirection.swift; sourceTree = "<group>"; };
+		58092CB839DD6839292AD3F51816FB3D /* AdListCollectionViewDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdListCollectionViewDataProvider.swift; sourceTree = "<group>"; };
+		5A850BB29908086D0513979B4C4F0681 /* AdListCollectionViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdListCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		6B3C25CDF461A5C18E24FD7E66C3AF08 /* Pods-AdList_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdList_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6C49911A6A35BB6371F1EE0EF360C003 /* Pods-AdList_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdList_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		75B7EA9BABB2778FD822682EA31D3778 /* Pods_AdList_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdList_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		879610F9BDEFE70ECA0BDBECD7C6C371 /* AdList.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AdList.modulemap; sourceTree = "<group>"; };
+		75B7EA9BABB2778FD822682EA31D3778 /* Pods_AdList_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdList_Tests.framework; path = "Pods-AdList_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81520312E4FB01F0FD12718DC3549B39 /* AdPlacer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdPlacer.swift; sourceTree = "<group>"; };
+		879610F9BDEFE70ECA0BDBECD7C6C371 /* AdList.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AdList.modulemap; sourceTree = "<group>"; };
 		8B08B7C000C155DA82D2D819DA730F7B /* Pods-AdList_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdList_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A465B57AF2EAE6E63BC747570A8F8E19 /* Pods-AdList_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-AdList_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94817E5FC84A4C17632AC69282C40006 /* AdListFacebookItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AdListFacebookItem.swift; sourceTree = "<group>"; };
+		A465B57AF2EAE6E63BC747570A8F8E19 /* Pods-AdList_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AdList_Tests.modulemap"; sourceTree = "<group>"; };
 		B124C3943B41794550D4E3D322C6355D /* Pods-AdList_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdList_Tests-resources.sh"; sourceTree = "<group>"; };
 		B2736AADC57E31DABA3BB5C073495F38 /* Pods-AdList_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdList_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B779194343CCF8ADFCA3D4716631BE88 /* Pods-AdList_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdList_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -65,33 +73,25 @@
 		DD2E9BDDE3C3C3948FBD0475717B78F6 /* Pods-AdList_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdList_Tests-dummy.m"; sourceTree = "<group>"; };
 		E22FD3E931D5553DF44492B354E05C75 /* AdList-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AdList-umbrella.h"; sourceTree = "<group>"; };
 		F35699B76B3CD1DA14CA5D8E26C685F4 /* Pods-AdList_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdList_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F378A71DAF78CB68CA31D6249DA3AB87 /* Pods_AdList_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdList_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F378A71DAF78CB68CA31D6249DA3AB87 /* Pods_AdList_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdList_Example.framework; path = "Pods-AdList_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F66EAF0FB32B120544192A3AB223847D /* Pods-AdList_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdList_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FCDDB43F36ED9E9FE71C4051AB8D9F2E /* AdList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AdList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF3927791EA243AA000B3B69 /* AdListCollectionViewDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListCollectionViewDataProvider.swift; sourceTree = "<group>"; };
-		FF39277B1EA265A5000B3B69 /* AdPositioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPositioning.swift; sourceTree = "<group>"; };
-		FF39277D1EA269BF000B3B69 /* AdPlacer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPlacer.swift; sourceTree = "<group>"; };
-		FF39277F1EA26C20000B3B69 /* AdListCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListCollectionViewDataSource.swift; sourceTree = "<group>"; };
-		FF3927851EA28C0E000B3B69 /* AdListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListItem.swift; sourceTree = "<group>"; };
-		FF3927881EA28CB7000B3B69 /* AdListFacebookItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListFacebookItem.swift; sourceTree = "<group>"; };
-		FF39278E1EA2AFA6000B3B69 /* AdListGoogleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListGoogleItem.swift; sourceTree = "<group>"; };
-		FF3927901EA5176B000B3B69 /* AdListScrollDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdListScrollDirection.swift; sourceTree = "<group>"; };
+		FCDDB43F36ED9E9FE71C4051AB8D9F2E /* AdList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AdList.framework; path = AdList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		12D9EFB3CD268403296C0E84D5B890A5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADFE6C9855A0E7692DC97D5A5E0AFF66 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1BD64168EDBBFF19849BC9A54A819C95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				38F384D14D2BC6174F26CED033D4D1F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D699F562B9D4BB633240D4337CDCA9F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76E6B1CEAA983186F74D511339A97699 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,20 +106,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		074BF28CBCF9D152AE68506222958CBB /* AdList */ = {
+			isa = PBXGroup;
+			children = (
+				9202B5127851C4A99454FBDEE29AC191 /* Classes */,
+			);
+			name = AdList;
+			path = AdList;
+			sourceTree = "<group>";
+		};
 		181A29163F8652A9DD5193D6C326C154 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
 				D33375458D046FAA7FB20DF0E1E050E3 /* AdList */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		2BBD16A00C7109AEAC2197D1681B9037 /* AdList */ = {
-			isa = PBXGroup;
-			children = (
-				93F204080C4396C5BC1965544FF39BBF /* Classes */,
-			);
-			path = AdList;
 			sourceTree = "<group>";
 		};
 		2FCFCA28E22F561863BF721F636FF378 /* Products */ = {
@@ -192,18 +193,29 @@
 			);
 			sourceTree = "<group>";
 		};
-		93F204080C4396C5BC1965544FF39BBF /* Classes */ = {
+		9202B5127851C4A99454FBDEE29AC191 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FF3927791EA243AA000B3B69 /* AdListCollectionViewDataProvider.swift */,
-				FF39277F1EA26C20000B3B69 /* AdListCollectionViewDataSource.swift */,
-				FF39277B1EA265A5000B3B69 /* AdPositioning.swift */,
-				FF39277D1EA269BF000B3B69 /* AdPlacer.swift */,
-				FF3927901EA5176B000B3B69 /* AdListScrollDirection.swift */,
-				FF3927871EA28C83000B3B69 /* AdTypes */,
-				FF3927851EA28C0E000B3B69 /* AdListItem.swift */,
+				58092CB839DD6839292AD3F51816FB3D /* AdListCollectionViewDataProvider.swift */,
+				5A850BB29908086D0513979B4C4F0681 /* AdListCollectionViewDataSource.swift */,
+				4D9BF00B1176F35FA764A60EC278D8DD /* AdListItem.swift */,
+				54D6898533B17F83D387297A04367E18 /* AdListScrollDirection.swift */,
+				81520312E4FB01F0FD12718DC3549B39 /* AdPlacer.swift */,
+				080848D3321DBFCE5B6AEF42A9B492A3 /* AdPositioning.swift */,
+				9A7861A6DA54F14B22E7FDEA186EE251 /* AdTypes */,
 			);
+			name = Classes;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		9A7861A6DA54F14B22E7FDEA186EE251 /* AdTypes */ = {
+			isa = PBXGroup;
+			children = (
+				94817E5FC84A4C17632AC69282C40006 /* AdListFacebookItem.swift */,
+				2DBDBBDD2E8EAB60DCF48589D701FC49 /* AdListGoogleItem.swift */,
+			);
+			name = AdTypes;
+			path = AdTypes;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -217,7 +229,7 @@
 		D33375458D046FAA7FB20DF0E1E050E3 /* AdList */ = {
 			isa = PBXGroup;
 			children = (
-				2BBD16A00C7109AEAC2197D1681B9037 /* AdList */,
+				074BF28CBCF9D152AE68506222958CBB /* AdList */,
 				5C9AF3FA384F25EC06A1BD2795E55792 /* Support Files */,
 			);
 			name = AdList;
@@ -242,26 +254,9 @@
 			path = "Target Support Files/Pods-AdList_Tests";
 			sourceTree = "<group>";
 		};
-		FF3927871EA28C83000B3B69 /* AdTypes */ = {
-			isa = PBXGroup;
-			children = (
-				FF3927881EA28CB7000B3B69 /* AdListFacebookItem.swift */,
-				FF39278E1EA2AFA6000B3B69 /* AdListGoogleItem.swift */,
-			);
-			path = AdTypes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0A5228CE998EE6E8DDD101599CFB81EF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8735855CB75F363584D58036D51590FE /* AdList-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4ED910982C02E07C880A90DDAFFEADB3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +270,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4DBD0373E85415887C35358BB687479 /* Pods-AdList_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB983DA13444AB3E41C413E29EAD6436 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31EFDEE2757246CFD211FCF1D07E730B /* AdList-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,23 +301,6 @@
 			productReference = 75B7EA9BABB2778FD822682EA31D3778 /* Pods_AdList_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8456940FF782574C76881E0C23A72C6D /* AdList */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A7363B413C4A88A5D6F7FA5E4DE9F684 /* Build configuration list for PBXNativeTarget "AdList" */;
-			buildPhases = (
-				CD9AF72E8C503E65D5535522C379C64A /* Sources */,
-				12D9EFB3CD268403296C0E84D5B890A5 /* Frameworks */,
-				0A5228CE998EE6E8DDD101599CFB81EF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AdList;
-			productName = AdList;
-			productReference = FCDDB43F36ED9E9FE71C4051AB8D9F2E /* AdList.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		99794CE523072CE6EC28E5F6B2584FEC /* Pods-AdList_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF6EECAB30A9C63FBE61C1DB298C3229 /* Build configuration list for PBXNativeTarget "Pods-AdList_Example" */;
@@ -331,6 +317,23 @@
 			name = "Pods-AdList_Example";
 			productName = "Pods-AdList_Example";
 			productReference = F378A71DAF78CB68CA31D6249DA3AB87 /* Pods_AdList_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DE58B4C6F63D634357EFFECEAA350763 /* AdList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4F1A8A5F4C295754FA131780944FCD7 /* Build configuration list for PBXNativeTarget "AdList" */;
+			buildPhases = (
+				BF8316D687163D94ABA642AA6111E4E3 /* Sources */,
+				D699F562B9D4BB633240D4337CDCA9F2 /* Frameworks */,
+				FB983DA13444AB3E41C413E29EAD6436 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdList;
+			productName = AdList;
+			productReference = FCDDB43F36ED9E9FE71C4051AB8D9F2E /* AdList.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -354,7 +357,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8456940FF782574C76881E0C23A72C6D /* AdList */,
+				DE58B4C6F63D634357EFFECEAA350763 /* AdList */,
 				99794CE523072CE6EC28E5F6B2584FEC /* Pods-AdList_Example */,
 				5B0431E7065FA3E7610C083BABF793A5 /* Pods-AdList_Tests */,
 			);
@@ -378,19 +381,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD9AF72E8C503E65D5535522C379C64A /* Sources */ = {
+		BF8316D687163D94ABA642AA6111E4E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF3927891EA28CB7000B3B69 /* AdListFacebookItem.swift in Sources */,
-				FF39278F1EA2AFA6000B3B69 /* AdListGoogleItem.swift in Sources */,
-				714ADB28A9F4D7A6376820FE77051355 /* AdList-dummy.m in Sources */,
-				FF3927861EA28C0E000B3B69 /* AdListItem.swift in Sources */,
-				FF39277E1EA269BF000B3B69 /* AdPlacer.swift in Sources */,
-				FF3927911EA5176B000B3B69 /* AdListScrollDirection.swift in Sources */,
-				FF39277A1EA243AA000B3B69 /* AdListCollectionViewDataProvider.swift in Sources */,
-				FF39277C1EA265A5000B3B69 /* AdPositioning.swift in Sources */,
-				FF3927801EA26C20000B3B69 /* AdListCollectionViewDataSource.swift in Sources */,
+				23D854268DB660DA568E3066FB0ED9D2 /* AdList-dummy.m in Sources */,
+				3264D6DA2AA44208DC2197BE1FEC5308 /* AdListCollectionViewDataProvider.swift in Sources */,
+				2F1D57FD33C07D6509D6C1096D72F61D /* AdListCollectionViewDataSource.swift in Sources */,
+				CACA4675D2BF9E021C22B1BFD7AA3074 /* AdListFacebookItem.swift in Sources */,
+				CFE02C60CE9DC28FAC8A2475B19A839B /* AdListGoogleItem.swift in Sources */,
+				3AD184534910CD359DA8BC15BAEBD567 /* AdListItem.swift in Sources */,
+				9EBD941601DE0169ADD5379907561A37 /* AdListScrollDirection.swift in Sources */,
+				40C1C4E6DBDC7B77760C6206A5592B3F /* AdPlacer.swift in Sources */,
+				1A69E8BF489892DFEF934BB423098E3B /* AdPositioning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,44 +403,12 @@
 		308BE9D5A576906340877F5C7869CF10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AdList;
-			target = 8456940FF782574C76881E0C23A72C6D /* AdList */;
+			target = DE58B4C6F63D634357EFFECEAA350763 /* AdList */;
 			targetProxy = 53DC562AEFA6F6BEB01502FFF7D1079A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C9A03DBEF620B45C00928578DEB3413 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2DE83F01FE30EC4EC84AB41B131EC32 /* AdList.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/AdList/AdList-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AdList/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AdList/AdList.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = AdList;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		0D6AD0C621219BEE0003747158C5054C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F66EAF0FB32B120544192A3AB223847D /* Pods-AdList_Example.release.xcconfig */;
@@ -473,7 +444,7 @@
 			};
 			name = Release;
 		};
-		3413E8B53F6828DA4CF88A368494FCEF /* Debug */ = {
+		3B5000B3BCE942546BA0527EEFC3D303 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D2DE83F01FE30EC4EC84AB41B131EC32 /* AdList.xcconfig */;
 			buildSettings = {
@@ -535,6 +506,38 @@
 				PRODUCT_NAME = Pods_AdList_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6C5C2505A2AEF4925CBB1FAB2E1107A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2DE83F01FE30EC4EC84AB41B131EC32 /* AdList.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AdList/AdList-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AdList/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AdList/AdList.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AdList;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -717,20 +720,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7363B413C4A88A5D6F7FA5E4DE9F684 /* Build configuration list for PBXNativeTarget "AdList" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3413E8B53F6828DA4CF88A368494FCEF /* Debug */,
-				0C9A03DBEF620B45C00928578DEB3413 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		BF6EECAB30A9C63FBE61C1DB298C3229 /* Build configuration list for PBXNativeTarget "Pods-AdList_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C404DF80BEF4124921599DC49F88639B /* Debug */,
 				0D6AD0C621219BEE0003747158C5054C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4F1A8A5F4C295754FA131780944FCD7 /* Build configuration list for PBXNativeTarget "AdList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B5000B3BCE942546BA0527EEFC3D303 /* Debug */,
+				6C5C2505A2AEF4925CBB1FAB2E1107A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

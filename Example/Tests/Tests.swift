@@ -19,6 +19,22 @@ class Tests: XCTestCase {
         XCTAssert(true, "Pass")
     }
     
+    func testScrollDirection() {
+        
+        var offset = CGPoint(x: 0, y: 0)
+        
+        let directionHandler = AdListScrollDirection()
+        directionHandler.calculateDirection(offset)
+        
+        offset = CGPoint(x: 0, y: 20)
+        directionHandler.calculateDirection(offset)
+        
+        let direction = directionHandler.direction
+        
+        XCTAssertTrue(direction == .up, "AdListScrollDirection should return UP direction")
+        
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure() {
