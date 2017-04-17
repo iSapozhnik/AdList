@@ -81,7 +81,9 @@ public class AdListCollectionViewDataProvider: NSObject, UICollectionViewDataSou
         
         if adPlacer.isAd(index: indexPath.row) {
             print("Going to display ad with index \(index)")
-            print("Next ad will be with Index \(adPlacer.adIndex(forCurrentIndex: index, scrollDirection: scrollDirection.direction))")
+            if let nextIndex = adPlacer.adIndex(forCurrentIndex: index, scrollDirection: scrollDirection.direction) {
+                print("Next ad will be with Index \(nextIndex)")
+            }
         }
 
     }
