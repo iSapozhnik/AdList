@@ -20,9 +20,4 @@ class DataModel: AdListItem {
     func placeholderTitle() -> String? {
         return itemTitle
     }
-    
-    public func isAdvertisement() -> Bool {
-        return false
-    }
-    
 }

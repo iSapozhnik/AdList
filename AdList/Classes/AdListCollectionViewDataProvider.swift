@@ -10,7 +10,9 @@ import Foundation
 
 public class AdListCollectionViewDataProvider: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    var adPlacer = AdPlacer(adsIndexes: Set())
+    var adPlacer = AdPlacer()
+    var scrollDirection = AdListScrollDirection()
+    
     public var data: [AdListItem]!
 
     public var delegate: AdListCollectionViewDataSource?
@@ -63,12 +65,25 @@ public class AdListCollectionViewDataProvider: NSObject, UICollectionViewDataSou
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+//        print("cellForItemAtRow \(indexPath.row)")
+        
         if adPlacer.isAd(index: indexPath.row) {
             let adItem = data[indexPath.row]
             return (delegate?.ad_collectionView(collectionView, adCellForAdItem:adItem, indexPath: indexPath))!
         } else {
             return (delegate?.ad_collectionView(collectionView, itemCellForItemAt:indexPath))!
         }
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        let index = indexPath.row
+        
+        if adPlacer.isAd(index: indexPath.row) {
+            print("Going to display ad with index \(index)")
+            print("Next ad will be with Index \(adPlacer.adIndex(forCurrentIndex: index, scrollDirection: scrollDirection.direction))")
+        }
+
     }
     
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -79,6 +94,13 @@ public class AdListCollectionViewDataProvider: NSObject, UICollectionViewDataSou
         } else {
             return (delegate?.ad_collectionView(collectionView, layout:collectionViewLayout, sizeForItemAt:indexPath))!
         }
+    }
+    
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollDirection.calculateDirection(scrollView.contentOffset)
+        
+//        print("\(scrollDirection.direction)")
+   
     }
     
 }

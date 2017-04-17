@@ -29,7 +29,7 @@ class ViewController: UIViewController, AdListCollectionViewDataSource {
         
         var tempData: [DataModel] = []
         
-        for index in 0...55 {
+        for index in 0...66 {
             let model = DataModel(title: "cell \(index)")
             tempData.insert(model, at: index)
         }
@@ -86,7 +86,7 @@ class ViewController: UIViewController, AdListCollectionViewDataSource {
         
         let label = UILabel(frame: cell.contentView.bounds)
         label.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        cell.contentView.backgroundColor = adItem.adBackgroundColor?() ?? UIColor.lightGray
+        cell.contentView.backgroundColor = adItem.adBackgroundColor() ?? UIColor.lightGray
         label.textAlignment = .center
         label.text = adItem.placeholderTitle() ?? "Title for Ad not provided"
         cell.contentView.addSubview(label)

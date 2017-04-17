@@ -8,12 +8,23 @@
 
 import Foundation
 
-@objc public protocol AdListItem {
+public protocol AdListItem {
     
     func placeholderTitle() -> String?
     func isAdvertisement() -> Bool
-    @objc optional func adBackgroundColor() -> UIColor?
+    func adBackgroundColor() -> UIColor?
+}
 
+public extension AdListItem {
+    
+    // Default implementation. i.e. optional method
+    
+    func adBackgroundColor() -> UIColor? { return nil }
+    
+    // For user models there is no need to implement this method - 
+    // by default it is false.
+    // Only Ad items should implement this and return true
+    func isAdvertisement() -> Bool { return false }
 }
 
 public protocol AdListAdItem: AdListItem {
