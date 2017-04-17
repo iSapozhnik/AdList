@@ -25,11 +25,9 @@ class AdPlacer {
     
     func adIndex(forCurrentIndex index: Int, scrollDirection direction: AdListScrollDirectionType) -> Int? {
 
-        guard sortedIndexes == nil else {
-            return nil
-        }
+        guard sortedIndexes == nil else { return nil }
         
-        let currentIndexOfAd = sortedIndexes!.index(of: index)
+        let currentIndexOfAd = sortedIndexes.index(of: index)
         
         if var currentIndexOfAd = currentIndexOfAd {
             
@@ -42,11 +40,11 @@ class AdPlacer {
                 currentIndexOfAd += 1
             }
             
-            if currentIndexOfAd < 0 || currentIndexOfAd >= sortedIndexes!.count {
+            if currentIndexOfAd < 0 || currentIndexOfAd >= sortedIndexes.count {
                 return nil
             }
             
-            return sortedIndexes![currentIndexOfAd]
+            return sortedIndexes[currentIndexOfAd]
             
         } else {
             return nil
